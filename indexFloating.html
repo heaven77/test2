@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .container {
+        grid-template-columns:repeat(12 1fr) ;
+        grid-template-rows: repeat(3 1fr) ;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 280px;
+      }
+
+      img {
+        display: flex;
+        -webkit-animation: float 6s ease-in-out infinite;
+        animation: float 6s ease-in-out infinite;
+        max-width: 1000px;
+        max-height: 185px;
+        min-height: 300px;
+        min width: 70px;
+        -webkit-box-reflect: below -80px linear-gradient(transparent, transparent, #0004);
+      }
+
+      img:hover {
+        width: 800px;
+        height: 125px;
+      }
+      @-webkit-keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+          transform: translatey(-20px);
+        }
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+          transform: translatey(-20px);
+        }
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-1">
+        <a href="main.html">
+          <img src="images/logo_new.png" alt="logo" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
